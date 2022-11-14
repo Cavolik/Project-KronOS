@@ -1,2 +1,2 @@
 # KronOS 
-# (Klokke, Radio Og Nedtellings Operativ System)
+  (Klokke, Radio Og Nedtellings Operativ System)
