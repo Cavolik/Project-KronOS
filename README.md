@@ -1,1 +1,1 @@
-# Project KronOS
+# KronOS (Klokke, Radio Og Nedtellings Operativ System)
