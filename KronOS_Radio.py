@@ -136,6 +136,17 @@ JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
            "/home/raspberry/musikkfolder/MagicalTime.mp3",#7
            "/home/raspberry/musikkfolder/1984.mp3",#8
            ##"/home/raspberry/musikkfolder/MetalChristmas.mp3"#9
+           "/home/raspberry/musikkfolder/PadoruPadoru.mp3",#10
+           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#11
+           "/home/raspberry/musikkfolder/CarolofthebelsNC.mp3",#12
+           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#13
+           "/home/raspberry/musikkfolder/SantaTellMeNC.mp3",#14
+           "/home/raspberry/musikkfolder/HevyMetalChristmas.mp3",#15
+           "/home/raspberry/musikkfolder/SilentNight.mp3",#16
+           "/home/raspberry/musikkfolder/LittleDrummerBoy.mp3",#17
+           "/home/raspberry/musikkfolder/JingleHell.mp3",#18
+           "/home/raspberry/musikkfolder/DarkestCarols.mp3",#19
+           "/home/raspberry/musikkfolder/Zone.mp3"#20
            ]
 
 #Set initial station number
