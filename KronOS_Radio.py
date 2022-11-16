@@ -83,14 +83,14 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/Fire.mp3",#8
            "/home/raspberry/musikkfolder/Megalovania.mp3",#9
            "/home/raspberry/musikkfolder/Halloween.mp3",#10
-           "/home/raspberry/musikkfolder/WhiteNoise.mp3",#11
-           "/home/raspberry/musikkfolder/1HourRandom.mp3",#12
+           ##"/home/raspberry/musikkfolder/WhiteNoise.mp3",#11
+           ##"/home/raspberry/musikkfolder/1HourRandom.mp3",#12
            "/home/raspberry/musikkfolder/SovietAnthem.mp3",#13
            "/home/raspberry/musikkfolder/1812Overture.mp3",#14
            "/home/raspberry/musikkfolder/PokemonIntro.mp3",#15
            "/home/raspberry/musikkfolder/Pokerap.mp3",#16
            "/home/raspberry/musikkfolder/CatShark.mp3",#17
-           "/home/raspberry/musikkfolder/SmashorPass.mp3",#18
+           ##"/home/raspberry/musikkfolder/SmashorPass.mp3",#18
            "/home/raspberry/musikkfolder/CrabRave.mp3",#19
            "/home/raspberry/musikkfolder/Chika.mp3",#20
            "/home/raspberry/musikkfolder/DOOM.mp3",#21
@@ -99,7 +99,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/LavenderTown.mp3",#24
            "/home/raspberry/musikkfolder/DragonMaid.mp3",#25
            "/home/raspberry/musikkfolder/Internett.mp3",#26
-           "/home/raspberry/musikkfolder/RelaxingRain.mp3",#27
+           ##"/home/raspberry/musikkfolder/RelaxingRain.mp3",#27
            "/home/raspberry/musikkfolder/Halo.mp3",#28
            "/home/raspberry/musikkfolder/NyanCat.mp3",#29
            "/home/raspberry/musikkfolder/Skyrim.mp3",#30
@@ -113,7 +113,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/Lifelight.mp3",#38
            "/home/raspberry/musikkfolder/Radio.mp3",#39
            "/home/raspberry/musikkfolder/Shuba.mp3",#40
-           "/home/raspberry/musikkfolder/Discs.mp3",#41
+           ##"/home/raspberry/musikkfolder/Discs.mp3",#41
            "/home/raspberry/musikkfolder/MiiTheme.mp3",#42
            "/home/raspberry/musikkfolder/IndianaJones.mp3",#43
            "/home/raspberry/musikkfolder/SongofStorms.mp3",#44
@@ -135,7 +135,7 @@ JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
            "/home/raspberry/musikkfolder/LASTCHRISTMAS.mp3",#6
            "/home/raspberry/musikkfolder/MagicalTime.mp3",#7
            "/home/raspberry/musikkfolder/1984.mp3",#8
-           "/home/raspberry/musikkfolder/MetalChristmas.mp3"#9
+           ##"/home/raspberry/musikkfolder/MetalChristmas.mp3"#9
            ]
 
 #Set initial station number
