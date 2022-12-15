@@ -1,6 +1,5 @@
 #KronOS v1.6(Jule edition) Base Code
 #TODO: Fix play/pause, add radio channels, add songs
-#VIKTIG! Fjera må aldri vere meir en 0.2 cm fra radioen
 import vlc
 import random
 import time
@@ -123,7 +122,13 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/Rasputin.mp3",#48
            "/home/raspberry/musikkfolder/Dorime.mp3",#49
            "/home/raspberry/musikkfolder/BadApple.mp3",#50
-           "/home/raspberry/musikkfolder/TreasureBox.mp3"#51
+           "/home/raspberry/musikkfolder/TreasureBox.mp3"
+           "/home/raspberry/musikkfolder/WidePutin.mp3",#52
+           "/home/raspberry/musikkfolder/DragosteaDinTei.mp3",#53
+           "/home/raspberry/musikkfolder/Boombastic.mp3",#54
+           "/home/raspberry/musikkfolder/TakeOnMiku.mp3",#55
+           "/home/raspberry/musikkfolder/BOOM.mp3",#56
+           "/home/raspberry/musikkfolder/HEY.mp3"#57
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
@@ -146,7 +151,9 @@ JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
            "/home/raspberry/musikkfolder/LittleDrummerBoy.mp3",#17
            "/home/raspberry/musikkfolder/JingleHell.mp3",#18
            "/home/raspberry/musikkfolder/DarkestCarols.mp3",#19
-           "/home/raspberry/musikkfolder/Zone.mp3"#20
+           "/home/raspberry/musikkfolder/Zone.mp3",#20
+           "/home/raspberry/musikkfolder/CarlWheezer.mp3",#21
+           "/home/raspberry/musikkfolder/WalkingintheAir.mp3"#22
            ]
 
 #Set initial station number
