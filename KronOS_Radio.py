@@ -149,7 +149,9 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/SweetdreamsKahoot.mp3",#75
            "/home/raspberry/musikkfolder/TwinkleTwinkle.mp3",#76
            "/home/raspberry/musikkfolder/NeurosamaScary.mp3",#77
-           "/home/raspberry/musikkfolder/NeurosamaBased.mp3"#78
+           "/home/raspberry/musikkfolder/NeurosamaBased.mp3",#78
+           "/home/raspberry/musikkfolder/SenkoNoises.mp3",#79
+           "/home/raspberry/musikkfolder/Hanaji.mp3"#80
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
@@ -185,7 +187,8 @@ JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
            "/home/raspberry/musikkfolder/FelizNavidad.mp3",#28
            "/home/raspberry/musikkfolder/Songname.mp3",#29
            "/home/raspberry/musikkfolder/SleighRide.mp3",#30
-           "/home/raspberry/musikkfolder/KillSanta.mp3"#31
+           "/home/raspberry/musikkfolder/KillSanta.mp3",#31
+           "/home/raspberry/musikkfolder/Cryptosanta.mp3"#32
            ]
 
 #Set initial station number
