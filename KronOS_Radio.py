@@ -129,6 +129,27 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/TakeOnMiku.mp3",#55
            "/home/raspberry/musikkfolder/BOOM.mp3",#56
            "/home/raspberry/musikkfolder/HEY.mp3"#57
+           "/home/raspberry/musikkfolder/LeekSpin.mp3",#58
+           "/home/raspberry/musikkfolder/BelieveinYou.mp3",#59
+           "/home/raspberry/musikkfolder/Be My Guest.mp3",#60
+           "/home/raspberry/musikkfolder/Counting.mp3",#61
+           "/home/raspberry/musikkfolder/DovregubbensHall.mp3",#62
+           "/home/raspberry/musikkfolder/Evangelion.mp3",#63
+           "/home/raspberry/musikkfolder/Gigachad Boss.mp3",#64
+           "/home/raspberry/musikkfolder/IceCreamLoli.mp3",#65
+           "/home/raspberry/musikkfolder/Miku.mp3",#66
+           "/home/raspberry/musikkfolder/MikuSinging.mp3",#67
+           "/home/raspberry/musikkfolder/Oops.mp3",#68
+           "/home/raspberry/musikkfolder/Pingu Boss.mp3",#69
+           "/home/raspberry/musikkfolder/Reflect.mp3",#70
+           "/home/raspberry/musikkfolder/Suzume.mp3",#71
+           "/home/raspberry/musikkfolder/TemplarsInRain.mp3",#72
+           "/home/raspberry/musikkfolder/Vitality.mp3",#73
+           "/home/raspberry/musikkfolder/CruelAngelsCalculator.mp3",#74
+           "/home/raspberry/musikkfolder/SweetdreamsKahoot.mp3",#75
+           "/home/raspberry/musikkfolder/TwinkleTwinkle.mp3",#76
+           "/home/raspberry/musikkfolder/NeurosamaScary.mp3",#77
+           "/home/raspberry/musikkfolder/NeurosamaBased.mp3"#78
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
