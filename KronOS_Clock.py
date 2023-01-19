@@ -1,5 +1,4 @@
 #KronOS Clock 1.0 Base code
-#VIKTIG! Fjera må aldri vere meir en 0.2 cm fra radioen
 from datetime import datetime
 import time
 import configparser
