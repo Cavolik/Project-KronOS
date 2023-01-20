@@ -1,6 +1,5 @@
 #KronOS Screen 1.0 Base code
 #TO DO: Useless loading screen, Change screen
-#VIKTIG! Fjera må aldri vere meir en 0.2 cm fra radioen
 import time
 import configparser
 from luma.lcd.device import hd44780
