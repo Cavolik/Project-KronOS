@@ -5,7 +5,7 @@
 
 
 echo Script name: $0
-echo $# arguments
+echo $1 arguments
 
 
 
@@ -15,7 +15,7 @@ pkill -f "KronOS_Radio.py"
 pkill -f "KronOS_Clock.py"
 
 
-if [ $# -eq 1 ]; then
+if [ $1 = "stop" ]; then
     echo "KronOS has been TERMIANTED!"
     exit
 fi
