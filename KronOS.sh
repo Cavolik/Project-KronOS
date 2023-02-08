@@ -42,3 +42,5 @@ python KronOS_Radio.py & disown
 
 
 python KronOS_Screen.py & disown
+
+python KronOS_Emotion.py
