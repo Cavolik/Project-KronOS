@@ -151,7 +151,18 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/NeurosamaScary.mp3",#77
            "/home/raspberry/musikkfolder/NeurosamaBased.mp3",#78
            "/home/raspberry/musikkfolder/SenkoNoises.mp3",#79
-           "/home/raspberry/musikkfolder/Hanaji.mp3"#80
+           "/home/raspberry/musikkfolder/Hanaji.mp3",#80
+           "/home/raspberry/musikkfolder/Alone.mp3",#81
+           "/home/raspberry/musikkfolder/Bonetrousle.mp3",#82
+           "/home/raspberry/musikkfolder/Caramelldansen.mp3",#83
+           "/home/raspberry/musikkfolder/Dancin.mp3",#84
+           "/home/raspberry/musikkfolder/Happier.mp3",#85
+           "/home/raspberry/musikkfolder/rise.mp3",#86
+           "/home/raspberry/musikkfolder/SinsTragedies.mp3",#87
+           "/home/raspberry/musikkfolder/SmugDancing.mp3",#88
+           "/home/raspberry/musikkfolder/SweetChild.mp3",#89
+           "/home/raspberry/musikkfolder/Thunderstruck.mp3",#90
+           "/home/raspberry/musikkfolder/Warriors.mp3",#91
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
