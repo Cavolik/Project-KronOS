@@ -40,7 +40,7 @@ l3 = "  <==============>"
 time.sleep(1)
 device.text = '\n'.join([l1, l2, l3, l4])
 l3 = "  <================>"
-time.sleep(2.4)
+time.sleep(2.5)
 
 
 config = configparser.ConfigParser()
