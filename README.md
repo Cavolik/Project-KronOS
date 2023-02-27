@@ -5,10 +5,8 @@ Controlpanel schematic
 ![image](https://user-images.githubusercontent.com/101195373/213676072-0f77928e-b04e-41bc-a653-855acdb3036a.png)
 
 
-   3V3  (1) (2)  5V    
-   
- GPIO2  (3) (4)  5V   
- 
+     3V3  (1) (2)  5V       
+ GPIO2  (3) (4)  5V
  GPIO3  (5) (6)  GND   
  
  GPIO4  (7) (8)  GPIO14
