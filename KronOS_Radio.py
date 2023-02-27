@@ -163,6 +163,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/SweetChild.mp3",#89
            "/home/raspberry/musikkfolder/Thunderstruck.mp3",#90
            "/home/raspberry/musikkfolder/Warriors.mp3",#91
+           "/home/raspberry/musikkfolder/RosaHelikopter.mp3",#92
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
