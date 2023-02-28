@@ -12,8 +12,8 @@ Raspberry pi to control panel conetion
              GPIO3  (5) (6)  GND - exp1 9
              GPIO4  (7) (8)  GPIO14
                GND  (9) (10) GPIO15
-   exp1 3 - GPIO17 (11) (12) GPIO18
-   exp1 5 - GPIO27 (13) (14) GND   
+    exp1 3 - GPIO17 (11) (12) GPIO1
+    exp1 5 - GPIO27 (13) (14) GND   
    exp1 6 - GPIO22 (15) (16) GPIO23 - exp1 2
                3V3 (17) (18) GPIO24 - exp2 3 
    exp1 7 - GPIO10 (19) (20) GND   
