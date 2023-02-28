@@ -5,7 +5,7 @@ Controlpanel schematic
 ![image](https://user-images.githubusercontent.com/101195373/213676072-0f77928e-b04e-41bc-a653-855acdb3036a.png)
 
 
-Raspberry pi to control panel conetion
+Raspberry pi to control panel connetion
 
                 3V3  (1) (2)  5V       
               GPIO2  (3) (4)  5V - exp1 10
