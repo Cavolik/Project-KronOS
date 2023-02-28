@@ -24,4 +24,4 @@ Controlpanel schematic
     GPIO13 (33) (34) GND   
     GPIO19 (35) (36) GPIO16
     GPIO26 (37) (38) GPIO20
-       GND (39) (40) GPIO21
+     exp1 1 - GND (39) (40) GPIO21
