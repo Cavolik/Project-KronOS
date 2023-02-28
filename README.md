@@ -6,8 +6,8 @@ Controlpanel schematic
 
 
        3V3  (1) (2)  5V       
-     GPIO2  (3) (4)  5V - exp GND
-     GPIO3  (5) (6)  GND - exp VCC
+     GPIO2  (3) (4)  5V - exp 10
+     GPIO3  (5) (6)  GND - exp 9
      GPIO4  (7) (8)  GPIO14
        GND  (9) (10) GPIO15
     GPIO17 (11) (12) GPIO18
