@@ -12,7 +12,7 @@ Controlpanel schematic
        GND  (9) (10) GPIO15
     GPIO17 (11) (12) GPIO18
     GPIO27 (13) (14) GND   
-    GPIO22 (15) (16) GPIO23 - 
+    GPIO22 (15) (16) GPIO23 - exp 
        3V3 (17) (18) GPIO24 -
     GPIO10 (19) (20) GND   
      GPIO9 (21) (22) GPIO25 -
