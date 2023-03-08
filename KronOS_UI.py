@@ -30,7 +30,7 @@ config = configparser.ConfigParser()
 
 likes = [5, 9, 17, 18, 20, 21, 22, 25, 31, 32, 39, 41, 50, 53, 55, 58, 61, 66, 67, 70, 71, 73, 75, 77, 78, 80, 81, 82, 89, 90]
 dislikes = [4, 6, 7, 19, 23, 54, 63, 74, 83, 86, 91, 92]
-gifs = ["bonk", "bug", "chainsaw", "chaos", "cloud", "confused", "duck", "error", "execution", "food", "gym", "kirby", "mad", "minigun", "pain", "potato", "rejected", "sane", "sheep", "slap", "squid", "summon", "time", "triangle", "useless"]
+gifs = ["bonk", "bug", "chainsaw", "chaos", "cloud", "confused", "duck", "economy", "error", "execution", "food", "gym", "kirby", "mad", "minigun", "pain", "potato", "rejected", "sane", "sheep", "slap", "squid", "summon", "time", "triangle", "tsundere", "useless"]
 
 #Match variable to entry in list
 def match(element, lst):
