@@ -1,5 +1,5 @@
 #KronOS v1.6(Jule edition) Base Code
-#TODO: Fix play/pause, add radio channels, add songs
+#TODO: Store lists in seperate file, direct youtube download, fix HTTP connection error, add radio channels, add songs
 import vlc
 import random
 import time
@@ -51,7 +51,7 @@ stations = ["Internal Songs§sang",
             "NRK MP3§http://lyd.nrk.no/nrk_radio_mp3_mp3_h", 
             "NRK S&F§http://lyd.nrk.no/nrk_radio_p1_sogn_og_fjordane_mp3_h",
             "Radioparadise§http://stream-sd1.radioparadise.com:80/mp3-32",
-            #"Country§http://ais-edge49-nyc04.cdnstream.com/2123_128.mp3",
+            #"Country§http://www.frontiercountryonline.com",
             #"Elevator§http://113fm-atunwadigital.streamguys1.com/1010",
             "Irsk§http://solid24.streamupsolutions.com:8026/live",
             "Instrumental§http://igor.torontocast.com:2030/stream",
@@ -63,11 +63,12 @@ stations = ["Internal Songs§sang",
             "Bollywood§http://ams1.reliastream.com:8046/live",
             "Texas Gospel§http://hazel.torontocast.com:1170/stream",
             #"Anime§http://audio.misproductions.com/japan128k",
-            #"Vocaloid§http://mikamp.com/mikamp",
+            #"Vocaloid§http://vocaloidradio.com",
             "SEGA§http://content.radiosega.net:8006/rs-mpeg.mp3",
             "LO-FI§http://ec2.yesstreaming.net:1910/stream",
             "Dark Abiance§http://radio.m00.su:8001/darkambient.mp3",
-            #"Alien§http://tantroniqradio.is-found.org:8000/tantroniq"
+            #"Alien§http://tantroniqradio.is-found.org:8000/tantroniq",
+            #"Topp 40§https://s37.myradiostream.com/11662/listen.mp3"
             ]
 
 #List of internal songs(Must have full filepath)
@@ -75,21 +76,21 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/relaxandsleep.mp3",#1
            "/home/raspberry/musikkfolder/spiritblossom.mp3",#2
            "/home/raspberry/musikkfolder/thecradleofyoursoul.mp3",#3
-           "/home/raspberry/musikkfolder/JOJO.mp3",#4"
+           "/home/raspberry/musikkfolder/JOJO.mp3",#4
            "/home/raspberry/musikkfolder/Rickroll.mp3",#5
            "/home/raspberry/musikkfolder/FightingGold.mp3",#6
            "/home/raspberry/musikkfolder/takeahint.mp3",#7
            "/home/raspberry/musikkfolder/Fire.mp3",#8
            "/home/raspberry/musikkfolder/Megalovania.mp3",#9
            "/home/raspberry/musikkfolder/Halloween.mp3",#10
-           ##"/home/raspberry/musikkfolder/WhiteNoise.mp3",#11
-           ##"/home/raspberry/musikkfolder/1HourRandom.mp3",#12
+           "/home/raspberry/musikkfolder/WhiteNoise.mp3",#11
+           "/home/raspberry/musikkfolder/1HourRandom.mp3",#12
            "/home/raspberry/musikkfolder/SovietAnthem.mp3",#13
            "/home/raspberry/musikkfolder/1812Overture.mp3",#14
            "/home/raspberry/musikkfolder/PokemonIntro.mp3",#15
            "/home/raspberry/musikkfolder/Pokerap.mp3",#16
            "/home/raspberry/musikkfolder/CatShark.mp3",#17
-           ##"/home/raspberry/musikkfolder/SmashorPass.mp3",#18
+           "/home/raspberry/musikkfolder/SmashorPass.mp3",#18
            "/home/raspberry/musikkfolder/CrabRave.mp3",#19
            "/home/raspberry/musikkfolder/Chika.mp3",#20
            "/home/raspberry/musikkfolder/DOOM.mp3",#21
@@ -98,7 +99,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/LavenderTown.mp3",#24
            "/home/raspberry/musikkfolder/DragonMaid.mp3",#25
            "/home/raspberry/musikkfolder/Internett.mp3",#26
-           ##"/home/raspberry/musikkfolder/RelaxingRain.mp3",#27
+           "/home/raspberry/musikkfolder/RelaxingRain.mp3",#27
            "/home/raspberry/musikkfolder/Halo.mp3",#28
            "/home/raspberry/musikkfolder/NyanCat.mp3",#29
            "/home/raspberry/musikkfolder/Skyrim.mp3",#30
@@ -112,7 +113,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/Lifelight.mp3",#38
            "/home/raspberry/musikkfolder/Radio.mp3",#39
            "/home/raspberry/musikkfolder/Shuba.mp3",#40
-           ##"/home/raspberry/musikkfolder/Discs.mp3",#41
+           "/home/raspberry/musikkfolder/Discs.mp3",#41
            "/home/raspberry/musikkfolder/MiiTheme.mp3",#42
            "/home/raspberry/musikkfolder/IndianaJones.mp3",#43
            "/home/raspberry/musikkfolder/SongofStorms.mp3",#44
@@ -122,13 +123,13 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/Rasputin.mp3",#48
            "/home/raspberry/musikkfolder/Dorime.mp3",#49
            "/home/raspberry/musikkfolder/BadApple.mp3",#50
-           "/home/raspberry/musikkfolder/TreasureBox.mp3"
+           "/home/raspberry/musikkfolder/TreasureBox.mp3",#51
            "/home/raspberry/musikkfolder/WidePutin.mp3",#52
            "/home/raspberry/musikkfolder/DragosteaDinTei.mp3",#53
            "/home/raspberry/musikkfolder/Boombastic.mp3",#54
            "/home/raspberry/musikkfolder/TakeOnMiku.mp3",#55
            "/home/raspberry/musikkfolder/BOOM.mp3",#56
-           "/home/raspberry/musikkfolder/HEY.mp3"#57
+           "/home/raspberry/musikkfolder/HEY.mp3",#57
            "/home/raspberry/musikkfolder/LeekSpin.mp3",#58
            "/home/raspberry/musikkfolder/BelieveinYou.mp3",#59
            "/home/raspberry/musikkfolder/Be My Guest.mp3",#60
@@ -163,7 +164,7 @@ IntList = ["/home/raspberry/musikkfolder/intothenight.mp3",#0
            "/home/raspberry/musikkfolder/SweetChild.mp3",#89
            "/home/raspberry/musikkfolder/Thunderstruck.mp3",#90
            "/home/raspberry/musikkfolder/Warriors.mp3",#91
-           "/home/raspberry/musikkfolder/RosaHelikopter.mp3",#92
+           "/home/raspberry/musikkfolder/RosaHelikopter.mp3"#92
            ]
 
 JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
@@ -172,23 +173,21 @@ JulList = ["/home/raspberry/musikkfolder/MariahCarey.mp3",#0
            "/home/raspberry/musikkfolder/MinecraftFestive.mp3",#3
            "/home/raspberry/musikkfolder/ChristmastimeIsKillingUs.mp3",#4
            "/home/raspberry/musikkfolder/JingleBellRock.mp3",#5
-           "/home/raspberry/musikkfolder/LASTCHRISTMAS.mp3",#6
-           "/home/raspberry/musikkfolder/MagicalTime.mp3",#7
-           "/home/raspberry/musikkfolder/1984.mp3",#8
-           ##"/home/raspberry/musikkfolder/MetalChristmas.mp3"#9
-           "/home/raspberry/musikkfolder/PadoruPadoru.mp3",#10
-           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#11
-           "/home/raspberry/musikkfolder/CarolofthebelsNC.mp3",#12
-           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#13
-           "/home/raspberry/musikkfolder/SantaTellMeNC.mp3",#14
-           "/home/raspberry/musikkfolder/HevyMetalChristmas.mp3",#15
-           "/home/raspberry/musikkfolder/SilentNight.mp3",#16
-           "/home/raspberry/musikkfolder/LittleDrummerBoy.mp3",#17
-           "/home/raspberry/musikkfolder/JingleHell.mp3",#18
-           "/home/raspberry/musikkfolder/DarkestCarols.mp3",#19
-           "/home/raspberry/musikkfolder/Zone.mp3",#20
-           "/home/raspberry/musikkfolder/CarlWheezer.mp3",#21
-           "/home/raspberry/musikkfolder/WalkingintheAir.mp3"#22
+           "/home/raspberry/musikkfolder/MagicalTime.mp3",#6
+           "/home/raspberry/musikkfolder/1984.mp3",#7
+           "/home/raspberry/musikkfolder/MetalChristmas.mp3",#8
+           "/home/raspberry/musikkfolder/PadoruPadoru.mp3",#9
+           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#10
+           "/home/raspberry/musikkfolder/CarolofthebelsNC.mp3",#11
+           "/home/raspberry/musikkfolder/CarolofTheBells.mp3",#12
+           "/home/raspberry/musikkfolder/SantaTellMeNC.mp3",#13
+           "/home/raspberry/musikkfolder/HeavyMetalChristmas.mp3",#14
+           "/home/raspberry/musikkfolder/SilentNight.mp3",#15
+           "/home/raspberry/musikkfolder/LittleDrummerBoy.mp3",#16
+           "/home/raspberry/musikkfolder/JingleHell.mp3",#17
+           "/home/raspberry/musikkfolder/DarkestCarols.mp3",#18
+           "/home/raspberry/musikkfolder/Zone.mp3",#19
+           "/home/raspberry/musikkfolder/WalkingintheAir.mp3",#20
            "/home/raspberry/musikkfolder/WinterWonderland.mp3",#21
            "/home/raspberry/musikkfolder/Rudolph.mp3",#22
            "/home/raspberry/musikkfolder/MerryLittleChristmas.mp3",#23
@@ -240,11 +239,11 @@ def Button_A_active(Button_A):
     if paused == True:
         p.set_pause(False)
         paused = False
-        print("The music is playing")
+        ##print("The music is playing")
     else:
         p.set_pause(True)
         paused = True
-        print("The music has been paused")
+        ##print("The music has been paused")
     return
 
 GPIO.add_event_detect(Button_A, GPIO.RISING, callback=Button_A_active, bouncetime=10)
@@ -282,13 +281,13 @@ while True:
             config.write(fh)
             fh.close()
 
-            print(playing)
-        else:
-            print(p.get_time())
+            ##print(playing)
+        ##else:
+            ##print(p.get_time())
     else:
         playing = stations[station].split("§")[0]
         link = stations[station].split("§")[1]
-        print("[%s]" % link)
+        ##print("[%s]" % link)
 
         #Open file for sharing
         fh = open("radio.ini", "w")
@@ -296,7 +295,7 @@ while True:
         config.write(fh)
         fh.close()
 
-        print(playing)
+        ##print(playing)
     
     PlaySong(link)
     #Slight pause to debounce
