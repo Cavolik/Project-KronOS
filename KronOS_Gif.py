@@ -32,7 +32,7 @@ def match(element, lst):
     
 def play_animation(anim):
 	#Display animation 
-	clip = VideoFileClip('/home/raspberry/gifs 2/' + anim + '.mp3')
+	clip = VideoFileClip('/home/raspberry/gifs 2/' + anim + '.gif')
 	clip.preview()
 	
 while True:
