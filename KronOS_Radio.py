@@ -1,5 +1,5 @@
 #KronOS v1.7(List edition) Base Code
-#TODO: Fix play/pause function, direct youtube download, fix HTTP connection error, add radio channels
+#TODO: Fix play/pause function, direct youtube download, fix HTTP connection error, add radio channels, add Truckers.fm
 import vlc
 import random
 import time
